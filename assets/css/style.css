@@ -1,0 +1,22 @@
+.jumbotron {
+    width: 65%;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.container1, .container2 {
+    margin: 0 auto;
+    margin-top: 35px;
+    padding: 15px;
+    border: 1px solid lightgrey;
+    width: 65%;
+}
+input {
+    width: 100%;
+}
+hr {
+    width: 100%;
+    margin-left: 0px;
+}

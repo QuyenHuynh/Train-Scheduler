@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--bootstrap import-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--custom css-->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <title>Train Scheduler</title>
+</head>
+
+<body>
+
+
+    <div class="jumbotron">
+            <h1>Anytime is Train Time</h1>
+            <h5 id="currentTime"></h5>
+    </div>
+
+    <div class="container1">
+        <p> <b>Current Train Schedule </b></p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container2">
+        <p><b>Add Train</b></p>
+        <hr>
+        <form>
+            <div class="form-group">
+                <label>Train Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label>Destination</label>
+                <input type="text" class="form-control" id="dest">
+            </div>
+            <div class="form-group">
+                <label>First Train Time (HH:mm - Military Time) </label>
+                <input type="number" class="form-control" id="traintime">
+            </div>
+            <div class="form-group">
+                <label>Frequency (min)</label>
+                <input type="number" class="form-control" id="freq">
+            </div>
+        </form>
+        <button type="button" class="btn btn-dark" id="submit-btn">Submit</button>
+        <br>
+        </div>
+        <br><br>
+
+        <!--moment.js-->
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <!--firebase-->
+        <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+        <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <!--custom JavaScript-->
+        <script src="assets/javascript/logic.js"></script>
+
+
+</body>
+
+</html>
